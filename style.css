@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav-bar{
+    background-color: rgb(1, 6, 10);
+    /* padding: 10px 40px; */
+    padding: 20px;
+
+
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 20px 10px;
+    text-transform: uppercase;
+}
+.green{
+    background-color: green;
+}
+/* Hover */
+.nav-bar a:hover{
+    background-color: rgb(98, 233, 110);
+    border-bottom: 2px solid white;
+}
+/* nav-manu */
+.continear{
+    display: inline;
+    position: relative;
+}
+.contant{
+    width: 200px;
+    position: absolute;
+    display: none;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.contant a{
+    display: block;
+    background-color: rgb(7, 10, 2);
+}
+/* manu hover */
+.contant a:hover{
+    background-color: rgb(31, 5, 5);
+    transform: scale(1.001);
+}
+.continear:hover .contant{
+    display: block;
+}
