@@ -2,51 +2,227 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-align: center;
 }
+/* .nav-bar start */
 .nav-bar{
-    background-color: rgb(1, 6, 10);
-    /* padding: 10px 40px; */
-    padding: 20px;
-
-
+    background-color: rgb(9, 43, 73);
+    text-align: center;
+    padding: 20px 0px;
 }
 .nav-bar a{
     text-decoration: none;
+    padding: 20px;
     color: white;
-    font-size: 15px;
-    padding: 20px 10px;
     text-transform: uppercase;
 }
-.green{
-    background-color: green;
-}
-/* Hover */
 .nav-bar a:hover{
-    background-color: rgb(98, 233, 110);
-    border-bottom: 2px solid white;
+    background-color: rgb(180, 180, 129);
+    border-bottom: 2px solid rgb(1, 15, 4);
 }
-/* nav-manu */
-.continear{
-    display: inline;
+.nav-bar .colore{
+    background-color:rgb(21, 136, 36);
+}
+/* nam-manu start of About */
+.dropdown-continear{
+    display: inline-block;
     position: relative;
+    
 }
-.contant{
-    width: 200px;
-    position: absolute;
+.dropdown-content{
     display: none;
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    background-color:rgb(9, 43, 73);
+    padding: px;
+    text-align: left;
     margin-top: 20px;
-    margin-left: 300px;
 }
-.contant a{
+.dropdown-content a{
     display: block;
-    background-color: rgb(7, 10, 2);
+    text-align: left;
 }
-/* manu hover */
-.contant a:hover{
-    background-color: rgb(31, 5, 5);
-    transform: scale(1.001);
-}
-.continear:hover .contant{
+.dropdown-continear:hover .dropdown-content{
     display: block;
 }
+.dropdown-content a:hover{
+    background-color: rgb(120, 167, 120);
+    transform: scale(1.01);
+}
+/* dropdoen manu and bar end */
+/* float */
+.body{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(196, 207, 178);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.float{
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid rgb(163, 115, 115);
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.center{
+    float: left;
+    width: 30%;
+}
+.clear-div{
+    clear: both; 
+}
+/* button */
+.button{
+
+}
+.button a{
+    text-decoration: none;
+    display: inline-block;
+}
+.card{
+    width: 1000px;
+    height: 200px;
+    /* background-color: rgb(72, 80, 59); */
+    margin: 0 auto;
+    margin-top: 50px; 
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.div1{
+    float: left;
+    width: 300px;
+    height: 220px;
+    background-color: rgb(32, 124, 124);
+
+}
+.div2{
+    float: left;
+    width: 300px;
+    height: 220px;
+    background-color: rgb(40, 231, 88);
+    margin-left: 50px;
+}
+.div3{
+    margin-left: 50px;
+    float: left;
+    width: 300px;
+    height: 220px;
+    background-color: rgb(235, 149, 50);
+}
+.hover:hover{
+    background-color: rgb(173, 165, 202);
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+/* card end*/
+.left-section{
+    float: left;
+    background-color: rgb(2, 14, 2);
+    margin: 100px 0px 0px 30px;
+    padding: 30px;
+    width: 40%;
+    height: 250px;
+    color: white;
+    text-align: center;
+    font-size: 20px;  
+}
+.left-section a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 15px;
+}
+.left-section a:hover{
+    background-color: red;
+    border: none;
+}
+.right-section img{
+    /* width: 500px; */
+    float: left;
+    margin: 100px 0px 0px 0px;
+    width: 55%;
+    height: 250px;   
+}
+.right-section #second{
+    margin: 100px 0px 0px 30px;
+    width: 50%;
+
+}
+.left-section2 img{
+    float: left;
+    margin: 70px 0px 0px 30px;
+    width: 55%;
+    height: 250px;   
+
+}
+.right-section2{
+    float: left;
+    background-color: rgb(2, 14, 2);
+    margin: 70px 0px 0px 0px;
+    padding: 30px;
+    width: 40%;
+    height: 250px;
+    color: white;
+    text-align: center;
+    font-size: 20px;  
+}
+.right-section2 a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 15px;
+}
+.right-section2 a:hover{
+    background-color: red;
+    border: none;
+}
+.full-width{
+    background-color: rgb(1, 19, 13);
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px; 
+    color: white;
+    text-transform: uppercase;  
+    display: grid;
+    grid-template: center;
+    align-items: center;
+}
+.products{
+    margin-top: 100px;
+}
+.img1 img{
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+.img2 img{
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+.img3 img{
+    float: left;
+    width: 34%;
+    height: 300px;
+}
+
+
